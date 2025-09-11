@@ -1,6 +1,21 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/* Fix horizontal overflow issues */
+html {
+  height: 100% !important;
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 @theme inline {
   --font-sans: var(--font-inter);
   --font-mono: var(--font-jetbrains-mono);
@@ -197,6 +212,17 @@
 
 .light ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+/* Force scrollbar to always be visible to prevent layout shift */
+html {
+  overflow-y: scroll;
+}
+
+/* Ensure consistent scrollbar width across all browsers */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #64748b transparent;
 }
 
 /* Smooth scrolling */
