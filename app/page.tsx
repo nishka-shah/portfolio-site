@@ -131,12 +131,18 @@ export default function Portfolio() {
             Technology. Strategy. Transformation.
           </p>
           <div className="flex gap-4 justify-center">
-            <Button
-              variant="outline"
-              className="bg-transparent font-semibold border-white text-white hover:bg-white hover:text-slate-900"
+            <a
+              href="/Nishka%20Shah%20Resume%203A.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              Resume
-            </Button>
+              <Button
+                variant="outline"
+                className="bg-transparent font-semibold border-white text-white hover:bg-white hover:text-slate-900"
+              >
+                Resume
+              </Button>
+            </a>
             <a href="https://www.linkedin.com/in/nishkashah05" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outline"
