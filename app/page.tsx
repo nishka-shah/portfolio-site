@@ -141,7 +141,7 @@ export default function Portfolio() {
                 Resume
               </Button>
             </a>
-            </a>
+            
             <a href="https://www.linkedin.com/in/nishkashah05" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outline"
