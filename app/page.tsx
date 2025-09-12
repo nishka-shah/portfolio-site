@@ -132,9 +132,8 @@ export default function Portfolio() {
           </p>
           <div className="flex gap-4 justify-center">
             <a
-              href="/Nishka%20Shah%20Resume%203A.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="https://nishkashah.com/Nishka%20Shah%20Resume%203A.pdf"
+              download
             >
               <Button
                 variant="outline"
