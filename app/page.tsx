@@ -128,20 +128,20 @@ export default function Portfolio() {
         <div className="relative z-10">
           <h1 className="text-5xl md:text-7xl font-bold mb-4 tracking-tight text-white">NISHKA SHAH</h1>
           <p className="text-lg md:text-xl mb-8 max-w-2xl text-gray-100">
-            Technology. Strategy. Transformation.
+            Data. Strategy. Transformation.
           </p>
           <div className="flex gap-4 justify-center">
             <a
-              href="https://docs.google.com/document/d/1rzunDbBNwWpbzjskWwUVmcyfGvO70gOPHC6sv7QOv00/edit?usp=sharing"
-            >
+              href="https://github.com/nishka-shah" target="_blank">
               <Button
                 variant="outline"
                 className="bg-transparent font-semibold border-white text-white hover:bg-white hover:text-slate-900"
               >
-                Resume
+                <Github className="w-4 h-4 mr-2" />
+                GitHub
               </Button>
             </a>
-            
+
             <a href="https://www.linkedin.com/in/nishkashah05" target="_blank" rel="noopener noreferrer">
               <Button
                 variant="outline"
@@ -171,8 +171,8 @@ export default function Portfolio() {
             <div className="flex justify-center">
               <div
                 className={`w-64 h-64 rounded-full p-1 ${theme === "light"
-                    ? "bg-gradient-to-br from-blue-500 to-purple-600"
-                    : "bg-gradient-to-br from-cyan-400 to-blue-500"
+                  ? "bg-gradient-to-br from-blue-500 to-purple-600"
+                  : "bg-gradient-to-br from-cyan-400 to-blue-500"
                   }`}
               >
                 <div className="w-full h-full rounded-full overflow-hidden">
@@ -192,12 +192,10 @@ export default function Portfolio() {
             >
               <p>
                 I’m studying Management Engineering at the University of Waterloo,
-                where I get to mix business thinking with technical problem-solving. I
-                like untangling messy problems and turning them into clear systems.
+                where I get to mix business thinking with technical problem-solving. I’m driven by the challenge of helping organizations unlock the value in their data. I enjoy streamlining messy workflows and implementing long-lasting AI-driven solutions.
                 Whether it’s rethinking a process, building something smarter with
                 tech, or finding patterns others miss, I’m drawn to work that makes
-                things run better. My career path is shaped by curiosity, efficiency,
-                and the drive to create lasting impact.
+                things run better.
               </p>
             </div>
           </div>
@@ -230,7 +228,7 @@ export default function Portfolio() {
                   Programming
                 </h3>
                 <p className={`text-sm ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                  JavaScript, Java, Python, SQL, R, VBA, HTML/CSS, Power BI, Tableau
+                  Python (Pandas, NumPy, scikit-learn, PyTorth, Flask, FastAPI), SQL, R, VBA, React
                 </p>
               </CardContent>
             </Card>
@@ -247,7 +245,7 @@ export default function Portfolio() {
                   Consulting
                 </h3>
                 <p className={`text-sm ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                  Process Optimization, Operations Research Modeling, Market Research & Competitive Analysis
+                  Process Optimization, Tech Consulting, Market Research
                 </p>
               </CardContent>
             </Card>
@@ -264,7 +262,7 @@ export default function Portfolio() {
                   Tools & Tech
                 </h3>
                 <p className={`text-sm ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                  SharePoint, Azure DevOps, Power Apps, MS Office Suite
+                  MySQL, MSSQL, Docker, AWS, Azure DevOps, Power Automate, Power BI, MS Office Suite, No-code tools (n8n, Zapier)
                 </p>
               </CardContent>
             </Card>
@@ -284,6 +282,99 @@ export default function Portfolio() {
 
           {/* First row of projects */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+          <Card
+              className={`transition-colors group ${theme === "light"
+                ? "bg-white border-gray-200 hover:border-blue-500"
+                : "bg-slate-800 border-slate-600 hover:border-cyan-400"
+                }`}
+            >
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 rounded-t-lg flex items-center justify-center">
+                  <img
+                    src="/newsletterdemo.png"
+                    alt="Newsletter Automation"
+                    className="w-full h-full object-cover rounded-t-lg"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className={`text-lg font-semibold mb-2 ${theme === "light" ? "text-gray-900" : "text-white"}`}>
+                    Newsletter Automation
+                  </h3>
+                  <p className={`text-sm mb-4 ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
+                  Automated the weekly tech newsletter shortisting, research, design, and distribution process at CIBC using n8n.
+                  </p>
+                  <div className="flex gap-2">
+                    <a href="https://drive.google.com/file/d/1eZYWgmZKaxN03xBezAWRfoiZX9glw6x-/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className={`bg-transparent ${theme === "light"
+                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
+                          }`}
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        View Demo
+                      </Button>
+                    </a>
+                    <a href="https://docs.google.com/presentation/d/1nEsV67eOxFkSsjZIOI1M9kIwksYy-RiUA0cRGc9CTBE/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className={`bg-transparent ${theme === "light"
+                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
+                          }`}
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        View Slides
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+          <Card
+              className={`transition-colors group ${theme === "light"
+                ? "bg-white border-gray-200 hover:border-blue-500"
+                : "bg-slate-800 border-slate-600 hover:border-cyan-400"
+                }`}
+            >
+              <CardContent className="p-0">
+                <div className="aspect-video bg-gradient-to-br from-green-500 to-teal-600 rounded-t-lg flex items-center justify-center">
+                  <img
+                    src="/insurance.png"
+                    alt="Insurance Cost Predictor"
+                    className="w-full h-full object-cover rounded-t-lg"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className={`text-lg font-semibold mb-2 ${theme === "light" ? "text-gray-900" : "text-white"}`}>
+                    Medical Insurance Cost Predictor
+                  </h3>
+                  <p className={`text-sm mb-4 ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
+                  Developed an end-to-end ML insurance cost prediction web app. Built a robust pipeline covering the entire lifecycle—from data ingestion to cloud deployment, using scikit-learn, Flask, Docker, and AWS.
+                  </p>
+                  <div className="flex gap-2">
+                    <a href="https://github.com/nishka-shah/insurance-cost-predictor" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className={`bg-transparent ${theme === "light"
+                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
+                          }`}
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        View Project
+                      </Button>
+                    </a>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
             <Card
               className={`transition-colors group ${theme === "light"
                 ? "bg-white border-gray-200 hover:border-blue-500"
@@ -323,61 +414,11 @@ export default function Portfolio() {
                 </div>
               </CardContent>
             </Card>
+          </div>
 
-            <Card
-              className={`transition-colors group ${theme === "light"
-                ? "bg-white border-gray-200 hover:border-blue-500"
-                : "bg-slate-800 border-slate-600 hover:border-cyan-400"
-                }`}
-            >
-              <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-emerald-500 to-teal-600 rounded-t-lg flex items-center justify-center">
-                  <img
-                    src="/DAC.png"
-                    alt="Consulting Case: DAC Implementation Strategy"
-                    className="w-full h-full object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className={`text-lg font-semibold mb-2 ${theme === "light" ? "text-gray-900" : "text-white"}`}>
-                    Consulting Case: DAC Implementation Strategy
-                  </h3>
-                  <p className={`text-sm mb-4 ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                    🏆 2025 Waterloo Engineering Competition (Consulting) Winner 🏆 Report features strategic implementation of Direct Air Capture units across metro Vancouver.
-                  </p>
-                  <div className="flex gap-2">
-                    <a href="https://docs.google.com/presentation/d/1r-HQ3F6drKP0RVE49cwZSK1i6ke9Hgvj/edit?usp=drive_link&ouid=107353109806567638700&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className={`bg-transparent ${theme === "light"
-                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
-                          }`}
-                      >
-                        <ExternalLink className="w-3 h-3 mr-1" />
-                        View Pptx
-                      </Button>
-                    </a>
-                    <a href="https://docs.google.com/document/d/1AwFbFMvWxTRqn8nD-W52Zk_OVikt4uKW0t8OtVjtf6Y/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className={`bg-transparent ${theme === "light"
-                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
-                          }`}
-                      >
-                        <ExternalLink className="w-3 h-3 mr-1" />
-                        View Report
-                      </Button>
-                    </a>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            <Card
+          {/* Second row of projects */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <Card
               className={`transition-colors group ${theme === "light"
                 ? "bg-white border-gray-200 hover:border-blue-500"
                 : "bg-slate-800 border-slate-600 hover:border-cyan-400"
@@ -416,10 +457,7 @@ export default function Portfolio() {
                 </div>
               </CardContent>
             </Card>
-          </div>
 
-          {/* Second row of projects */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card
               className={`transition-colors group ${theme === "light"
                 ? "bg-white border-gray-200 hover:border-blue-500"
@@ -427,22 +465,22 @@ export default function Portfolio() {
                 }`}
             >
               <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-blue-500 to-purple-600 rounded-t-lg flex items-center justify-center">
+                <div className="aspect-video bg-gradient-to-br from-emerald-500 to-teal-600 rounded-t-lg flex items-center justify-center">
                   <img
-                    src="/PowerBI Dashboard SS.png"
-                    alt="Power BI Dashboard"
+                    src="/DAC.png"
+                    alt="Consulting Case: DAC Implementation Strategy"
                     className="w-full h-full object-cover rounded-t-lg"
                   />
                 </div>
                 <div className="p-6">
                   <h3 className={`text-lg font-semibold mb-2 ${theme === "light" ? "text-gray-900" : "text-white"}`}>
-                    Power BI Dashboard
+                    Consulting Case: DAC Implementation Strategy
                   </h3>
                   <p className={`text-sm mb-4 ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                    Used mock Excel dataset to create a dynamic Power BI dashboard. Includes use of SWITCH measures, conditional formatting, and dynamic titles.
+                    🏆 2025 Waterloo Engineering Competition (Consulting) Winner 🏆 Report features strategic implementation of Direct Air Capture units across metro Vancouver.
                   </p>
                   <div className="flex gap-2">
-                    <a href="https://github.com/nishka-shah/Performance-Report" target="_blank" rel="noopener noreferrer">
+                    <a href="https://docs.google.com/presentation/d/1r-HQ3F6drKP0RVE49cwZSK1i6ke9Hgvj/edit?usp=drive_link&ouid=107353109806567638700&rtpof=true&sd=true" target="_blank" rel="noopener noreferrer">
                       <Button
                         size="sm"
                         variant="outline"
@@ -452,7 +490,20 @@ export default function Portfolio() {
                           }`}
                       >
                         <ExternalLink className="w-3 h-3 mr-1" />
-                        View Project
+                        View Slides
+                      </Button>
+                    </a>
+                    <a href="https://docs.google.com/document/d/1AwFbFMvWxTRqn8nD-W52Zk_OVikt4uKW0t8OtVjtf6Y/edit?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                      <Button
+                        size="sm"
+                        variant="outline"
+                        className={`bg-transparent ${theme === "light"
+                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
+                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
+                          }`}
+                      >
+                        <ExternalLink className="w-3 h-3 mr-1" />
+                        View Report
                       </Button>
                     </a>
                   </div>
@@ -500,48 +551,9 @@ export default function Portfolio() {
               </CardContent>
             </Card>
 
-            <Card
-              className={`transition-colors group ${theme === "light"
-                ? "bg-white border-gray-200 hover:border-blue-500"
-                : "bg-slate-800 border-slate-600 hover:border-cyan-400"
-                }`}
-            >
-              <CardContent className="p-0">
-                <div className="aspect-video bg-gradient-to-br from-orange-500 to-red-600 rounded-t-lg flex items-center justify-center">
-                  <img
-                    src="/timemgmt.png"
-                    alt="Time Management Tool"
-                    className="w-full h-full object-cover rounded-t-lg"
-                  />
-                </div>
-                <div className="p-6">
-                  <h3 className={`text-lg font-semibold mb-2 ${theme === "light" ? "text-gray-900" : "text-white"}`}>
-                    Time Management Tool
-                  </h3>
-                  <p className={`text-sm mb-4 ${theme === "light" ? "text-gray-600" : "text-gray-300"}`}>
-                    VBA-based productivity application for tracking tasks and optimizing time allocation across projects.
-                  </p>
-                  <div className="flex gap-2">
-                    <a href="https://github.com/nishka-shah/Time-Management-Tool" target="_blank" rel="noopener noreferrer">
-                      <Button
-                        size="sm"
-                        variant="outline"
-                        className={`bg-transparent ${theme === "light"
-                          ? "border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white"
-                          : "border-cyan-400 text-cyan-400 hover:bg-cyan-400 hover:text-slate-900"
-                          }`}
-                      >
-                        <ExternalLink className="w-3 h-3 mr-1" />
-                        View Project
-                      </Button>
-                    </a>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
-      </section >
+      </section>
 
       {/* Contact Section */}
       < section id="contact" className={`py-20 px-6 md:px-12 ${theme === "light" ? "bg-gray-100" : "bg-slate-800"}`}>
